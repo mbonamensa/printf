@@ -3,5 +3,5 @@
 #include <stdio.h>
 #include <stdarg.h>
 
-int_printf(const char *format, ...);
+int _printf(const char *format, ...);
 #endif
