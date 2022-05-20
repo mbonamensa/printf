@@ -37,6 +37,6 @@ int print_binary(va_list ap, char *buf, unsigned int ibuf)
 			count++;
 		}
 	}
-	free(binary);
+	free(bin);
 	return (count);
 }

@@ -24,4 +24,5 @@ int print_string(va_list ap, char *buf, unsigned int ibuf);
 int print_char(va_list ap, char *buf, unsigned int ibuf);
 int print_int(va_list ap, char *buf, unsigned int ibuf);
 int print_binary(va_list ap, char *buf, unsigned int ibuf);
+char *fill_binary_arr(char *binary, long int in, int neg, int limit);
 #endif
