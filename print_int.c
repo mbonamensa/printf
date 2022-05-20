@@ -29,7 +29,7 @@ int print_int(va_list ap, char *buf, unsigned int ibuf)
 	while (temp > 9)
 	{
 		div *= 10;
-		int_temp /= 10;
+		temp /= 10;
 	}
 	for (i = 0; div > 0; div /= 10, i++)
 	{
