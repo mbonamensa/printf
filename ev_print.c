@@ -10,7 +10,7 @@ int ev_print(const char *s, int ind)
 {
 	print_t op[] = {
 		{"c", print_char}, {"s", print_string}, {"i", print_int},
-		{"d", print_int}, {NULL, NULL},
+		{"d", print_int}, {"b", print_binary}, {NULL, NULL},
 	};
 	int i = 0, j = 0, index;
 

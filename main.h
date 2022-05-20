@@ -23,4 +23,5 @@ int printbuf(char *buf, unsigned int nbuf);
 int print_string(va_list ap, char *buf, unsigned int ibuf);
 int print_char(va_list ap, char *buf, unsigned int ibuf);
 int print_int(va_list ap, char *buf, unsigned int ibuf);
+int print_binary(va_list ap, char *buf, unsigned int ibuf);
 #endif

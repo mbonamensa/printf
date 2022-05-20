@@ -10,7 +10,7 @@ int (*get_printfunc(const char *s, int ind))(va_list, char *, unsigned int)
 {
 	print_t op[] = {
 		{"c", print_char}, {"s", print_string}, {"i", print_int},
-		{"d", print_int}, {NULL, NULL},
+		{"d", print_int}, {"b", print_binary}, {NULL, NULL},
 	};
 	int i = 0, j = 0, index;
 
