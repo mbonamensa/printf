@@ -12,7 +12,7 @@ int _printf(const char *format, ...)
 
 	char *str;
 
-	int i, counter = 0;
+	int i, counter = 1;
 
 	const char *conv;
 
@@ -41,6 +41,11 @@ int _printf(const char *format, ...)
 			case 'i':
 			case 'd':
 				i = va_arg(ap, int);
+				if (i < 0)
+				{
+					_putchar('-');
+					i = -i;
+				}
 				fputs(converter(i, 10), stdout);
 				break;
 		}
