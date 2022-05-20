@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _printf: printf function
+ * _printf - printf function
  * @format: format
  * Return: counter
  */
@@ -23,7 +23,7 @@ int _printf(const char *format, ...)
 		{
 			if (*conv == '\0')
 				return (counter);
-			putchar(*conv);
+			_putchar(*conv);
 			conv++;
 			counter++;
 		}
@@ -32,15 +32,14 @@ int _printf(const char *format, ...)
 		{
 			case 'c':
 				i = va_arg(ap, int);
-				putchar(i);
+				_putchar(i);
 				break;
 			case 's':
 				str = va_arg(ap, char *);
-				fputs (str, stdout);
+				fputs(str, stdout);
 				break;
 		}
 	}
-	va_end (ap);
+	va_end(ap);
 	return (counter);
 }
-
