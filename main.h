@@ -26,5 +26,11 @@ int print_int(va_list ap, char *buf, unsigned int ibuf);
 int print_binary(va_list ap, char *buf, unsigned int ibuf);
 int print_rot13(va_list ap, char *buf,unsigned int ibuf);
 int print_rev(va_list ap, char *buf, unsigned int ibuf);
+int print_octal(va_list ap, char *buf, unsigned int ibuf);
+int print_uns(va_list ap, char *buf, unsigned int ibuf);
+int print_hex(va_list ap, char *buf, unsigned int ibuf);
+int print_uphex(va_list ap, char *buf, unsigned int ibuf);
 char *fill_binary_arr(char *binary, long int in, int neg, int limit);
+char *fill_oct(char *bnr, char *oct);
+char *fill_hex(char *bnr, char *hex, int isupp, int limit);
 #endif
