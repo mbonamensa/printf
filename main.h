@@ -32,6 +32,7 @@ int print_hex(va_list ap, char *buf, unsigned int ibuf);
 int print_uphex(va_list ap, char *buf, unsigned int ibuf);
 int print_S(va_list ap, char *buf, unsigned int ibuf);
 int print_addr(va_list ap, char *buf, unsigned int ibuf);
+int prinpint(va_list ap, char *buf, unsigned int ibuf)
 char *fill_binary_arr(char *binary, long int in, int neg, int limit);
 char *fill_oct(char *bnr, char *oct);
 char *fill_hex(char *bnr, char *hex, int isupp, int limit);
