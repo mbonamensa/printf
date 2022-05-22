@@ -13,7 +13,13 @@ int (*get_printfunc(const char *s, int ind))(va_list, char *, unsigned int)
 		{"d", print_int}, {"b", print_binary}, {"r", print_rev},
 		{"R", print_rot13}, {"o", print_octal}, {"u", print_uns},
 		{"x", print_hex}, {"X", print_uphex}, {"S", print_S},
-		{"p", print_addr}, {NULL, NULL},
+		{"p", print_addr}, {"+i", prinpint}, {"+d", prinpint},
+		{"+o", print_octal}, {"+u", print_uns}, {"+x", print_hex},
+		{"+X", print_uphex}, {" i", prinsint}, {" d", prinsint},
+		{" o", print_octal}, {" x", print_hex}, {" X", print_uphex},
+		{"#i", print_int}, {"#d", print_int}, {"#o", prinnoct},
+		{"#u", print_uns}, {"#x", prinnhex}, {"#X", prinnupx},
+		{NULL, NULL},
 	};
 	int i = 0, j = 0, index;
 
