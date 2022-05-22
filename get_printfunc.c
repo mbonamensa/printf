@@ -19,6 +19,10 @@ int (*get_printfunc(const char *s, int ind))(va_list, char *, unsigned int)
 		{" o", print_octal}, {" x", print_hex}, {" X", print_uphex},
 		{"#i", print_int}, {"#d", print_int}, {"#o", prinnoct},
 		{"#u", print_uns}, {"#x", prinnhex}, {"#X", prinnupx},
+		{"li", prinlint}, {"ld", prinlint}, {"lu", prinlunt},
+		{"lo", prinloct}, {"lx", prinlhex}, {"lX", prinlupx},
+		{"hi", prinhint}, {"hd", prinhint}, {"hu", prinhunt},
+		{"ho", prinhoct}, {"hx", prinhhex}, {"hX", prinhupx},
 		{NULL, NULL},
 	};
 	int i = 0, j = 0, index;
