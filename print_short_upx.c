@@ -18,7 +18,7 @@ int prinhupx(va_list ap, char *buf, unsigned int ibuf)
 
 	if (int_input == 0)
 	{
-		ibuf = handl_buf(buf, '0', ibuf);
+		ibuf = handlebuf(buf, '0', ibuf);
 		return (1);
 	}
 	if (int_input < 0)
