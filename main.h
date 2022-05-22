@@ -50,4 +50,6 @@ int prinhupx(va_list ap, char *buf, unsigned int ibuf);
 char *fill_binary_arr(char *binary, long int in, int neg, int limit);
 char *fill_oct(char *bnr, char *oct);
 char *fill_hex(char *bnr, char *hex, int isupp, int limit);
+char *fill_long_oct_array(char *bnr, char *oct);
+char *fill_short_oct_array(char *bnr, char *oct);
 #endif
