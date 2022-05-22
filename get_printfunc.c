@@ -12,7 +12,8 @@ int (*get_printfunc(const char *s, int ind))(va_list, char *, unsigned int)
 		{"c", print_char}, {"s", print_string}, {"i", print_int},
 		{"d", print_int}, {"b", print_binary}, {"r", print_rev},
 		{"R", print_rot13}, {"o", print_octal}, {"u", print_uns},
-		{"x", print_hex}, {"X", print_uphex}, {NULL, NULL},
+		{"x", print_hex}, {"X", print_uphex}, {"S", print_S},
+		{"p", print_addr}, {NULL, NULL},
 	};
 	int i = 0, j = 0, index;
 
